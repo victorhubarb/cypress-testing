@@ -95,5 +95,4 @@ Reports are saved as HTML files in `cypress/results/`.
 ## Author
 
 **Victor Hugo Barbosa**
-CS Student — MassBay Community College
 [GitHub](https://github.com/victorhubarb) · [LinkedIn](https://www.linkedin.com/in/victorhbarbosa/)
