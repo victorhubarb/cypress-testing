@@ -2,6 +2,8 @@
 
 End-to-end and API tests written with Cypress against Adopet, a demo pet-adoption web app ([adopet-frontend-cypress.vercel.app](https://adopet-frontend-cypress.vercel.app)). The tests are mine. The app is a public practice target and not something I built.
 
+> Built as hands-on practice while following an Alura course.
+
 The suite covers sign-up and login on the UI, one authenticated API call, and a stubbed server failure. Headless runs produce Mochawesome HTML reports.
 
 ## What's covered
