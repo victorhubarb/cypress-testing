@@ -37,9 +37,11 @@ npx cypress run    # headless, writes the report to cypress/results/
 
 The specs hit a live site and a free-tier API, so the first request can be slow while it wakes up.
 
+The API spec (`api-mensagens`) needs a bearer token. Copy `cypress.env.example.json` to `cypress.env.json` (git-ignored) and put a valid token in it.
+
 ## Known gaps
 
-- The API spec reads a bearer token from `cypress.env.json`, and that token is committed. It expired in 2024, so `api-mensagens` now fails with an authorization error until a fresh token is put there. The file should be git-ignored, with a `cypress.env.example.json` committed in its place.
+- `api-mensagens` reads its bearer token from `cypress.env.json`, which is now git-ignored. An old token was committed earlier and is still in the history. It expired in 2024, so the spec fails with an authorization error until you add a fresh token.
 - `cadastro-correto` and `cadastro-massa` submit the form but do not assert the outcome yet.
 - The tests depend on the live demo app and its seeded users, so they can break when that data changes.
 - `npm test` is not wired to Cypress. Use the `npx` commands above.
